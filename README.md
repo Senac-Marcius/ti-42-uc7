@@ -117,7 +117,7 @@ http://<IP_DA_VM_ZABBIX>:8084
 Após executar o script `deploy.sh`, o site de portfólio estará disponível em:
 
 ~~~
-http://<IP_DA_VM_PORTFOLIO>:80
+http://<IP_DA_VM_SERVIDOR>:80
 ~~~
 
 ### Acesso via SSH
@@ -125,7 +125,7 @@ http://<IP_DA_VM_PORTFOLIO>:80
 Para acessar o contêiner via SSH, utilize:
 
 ~~~sh
-ssh ubuntu@<IP_DA_VM_PORTFOLIO> -p 22
+ssh ubuntu@<IP_DA_VM_SERVIDOR> -p 22
 ~~~
 
 Usuário: `ubuntu`
@@ -135,7 +135,7 @@ Senha: `ubuntu123`
 
 Para acessar o contêiner via FTP, utilize um cliente FTP (como FileZilla) com as seguintes configurações:
 
-- Host: `<IP_DA_VM_PORTFOLIO>`
+- Host: `<IP_DA_VM_SERVIDOR>`
 - Porta: `21`
 - Usuário: `ubuntu`
 - Senha: `ubuntu123`
