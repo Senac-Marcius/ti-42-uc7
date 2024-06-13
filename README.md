@@ -1,4 +1,4 @@
-# ti-42-uc7
+# ti-42-uc7 Aluno(a): Bruna
 
 # Zabbix Deployment
 
