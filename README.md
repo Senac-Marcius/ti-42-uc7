@@ -2,19 +2,24 @@
 
 # Zabbix Deployment
 
+
+~~~sh
+git clone <URL_DO_SEU_REPOSITORIO>
+~~~
+
 Este repositório contém os scripts e arquivos necessários para configurar um ambiente Zabbix completo em contêineres Docker, e um ambiente Nginx com SSH, FTP e agente Zabbix em outra VM.
 
 ## Estrutura do Projeto
 
 ~~~
 myproject/
-├── servidor/
+├── Servidor/
 │   ├── Dockerfile
 │   ├── deploy.sh
 │   ├── zabbix_agentd.conf
 │   └── site1/
 │       └── index.html
-└── zabbix/
+└── Zabbix/
     ├── deploy_zabbix.sh
     └── README.md
 ~~~
@@ -28,8 +33,7 @@ myproject/
 Clone o repositório na VM CentOS para configurar o ambiente Zabbix:
 
 ~~~sh
-git clone <URL_DO_SEU_REPOSITORIO>/zabbix
-cd zabbix
+cd Zabbix
 ~~~
 
 #### Tornar o Script Executável
@@ -48,17 +52,16 @@ Execute o script `deploy_zabbix.sh` para configurar o ambiente Zabbix:
 ./deploy_zabbix.sh
 ~~~
 
-### 2. Configurar o Ambiente de Portfólio
+### 2. Configurar o Ambiente de Servidor
 
 Após configurar o ambiente Zabbix, você precisará do IP da VM onde o Zabbix está rodando. Anote o IP exibido ao final do script `deploy_zabbix.sh`.
 
-#### Clonar o Repositório
+#### Clonar o Servidor
 
 Clone o repositório na VM CentOS para configurar o ambiente de portfólio:
 
 ~~~sh
-git clone <URL_DO_SEU_REPOSITORIO>/portfolio
-cd portfolio
+cd Servidor
 ~~~
 
 #### Editar a Configuração do Zabbix Agent
