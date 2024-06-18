@@ -85,7 +85,7 @@ docker run --name zabbix-web-nginx-mysql -t \
   -e MYSQL_PASSWORD="zabbix_pwd" \
   -e MYSQL_ROOT_PASSWORD="root_pwd" \
   --network=zabbix-net \
-  -p 8080:8080 \
+  -p 80:8080 \
   --restart unless-stopped \
   -d zabbix/zabbix-web-nginx-mysql:alpine-6.4-latest
 
@@ -93,5 +93,5 @@ docker run --name zabbix-web-nginx-mysql -t \
 VM_IP=$(hostname -I | awk '{print $1}')
 
 # Exibir o IP da VM
-echo "Zabbix Web Interface disponível em http://$VM_IP:8084"
+echo "Zabbix Web Interface disponível em http://$VM_IP"
 echo "Modifique o arquivo de configuração do portfólio na outra VM para usar o IP: $VM_IP"
