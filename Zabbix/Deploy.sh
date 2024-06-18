@@ -85,7 +85,7 @@ docker run --name zabbix-web-nginx-mysql -t \
   -e MYSQL_PASSWORD="zabbix_pwd" \
   -e MYSQL_ROOT_PASSWORD="root_pwd" \
   --network=zabbix-net \
-  -p 8084:8080 \
+  -p 8080:8080 \
   --restart unless-stopped \
   -d zabbix/zabbix-web-nginx-mysql:alpine-6.4-latest
 
