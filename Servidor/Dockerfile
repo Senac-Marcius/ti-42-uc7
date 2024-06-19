@@ -30,6 +30,6 @@ RUN apt-get install -y zabbix-agent
 COPY zabbix_agentd.conf /etc/zabbix/zabbix_agentd.conf
 
 # Expor as portas 80, 21 (FTP), 22 (SSH) e 10050 (Zabbix Agent)
-EXPOSE 80 21 22 10050
+EXPOSE 81 21 22 10050
 # Iniciar o SSH, FTP, Zabbix Agent e o Nginx
 CMD ["/bin/bash", "-c", "service ssh start && service vsftpd start && service zabbix-agent start && nginx -g 'daemon off;'"]
