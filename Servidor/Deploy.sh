@@ -46,4 +46,4 @@ fi
 docker build -t nginx-ssh-ftp-demo .
 
 # Executar o contêiner Docker
-docker run -d --network host --dns 8.8.8.8 -p 80:80 -p 21:21 -p 22:22 -p 10050:10050 --name nginx-ssh-ftp-demo-container nginx-ssh-ftp-demo
+docker run -d --network host --dns 8.8.8.8 -p 82:82 -p 21:21 -p 22:22 -p 10050:10050 --name nginx-ssh-ftp-demo-container nginx-ssh-ftp-demo
