@@ -15,12 +15,12 @@ Este repositório contém os scripts e arquivos necessários para configurar um 
 myproject/
 ├── Servidor/
 │   ├── Dockerfile
-│   ├── deploy.sh
+│   ├── Deploy.sh
 │   ├── zabbix_agentd.conf
 │   └── site1/
 │       └── index.html
 └── Zabbix/
-    ├── deploy_zabbix.sh
+    ├── Deploy.sh
     └── README.md
 ~~~
 
@@ -38,10 +38,10 @@ cd Zabbix
 
 #### Tornar o Script Executável
 
-Torne o script `deploy_zabbix.sh` executável:
+Torne o script `Deploy.sh` executável:
 
 ~~~sh
-chmod +x deploy_zabbix.sh
+chmod +x Deploy.sh
 ~~~
 
 #### Executar o Script
@@ -49,7 +49,7 @@ chmod +x deploy_zabbix.sh
 Execute o script `deploy_zabbix.sh` para configurar o ambiente Zabbix:
 
 ~~~sh
-./deploy_zabbix.sh
+./Deploy.sh
 ~~~
 
 ### 2. Configurar o Ambiente de Servidor
@@ -76,18 +76,18 @@ Substitua `<IP_DO_SERVIDOR_ZABBIX>` pelo IP da VM onde o Zabbix está rodando.
 
 #### Tornar o Script Executável
 
-Torne o script `deploy.sh` executável:
+Torne o script `Deploy.sh` executável:
 
 ~~~sh
-chmod +x deploy.sh
+chmod +x Deploy.sh
 ~~~
 
 #### Executar o Script
 
-Execute o script `deploy.sh` para configurar o ambiente de portfólio:
+Execute o script `Deploy.sh` para configurar o ambiente de portfólio:
 
 ~~~sh
-./deploy.sh
+./Deploy.sh
 ~~~
 
 ## Configuração do Zabbix Agent
@@ -106,7 +106,7 @@ Substitua `<IP_DO_SERVIDOR_ZABBIX>` pelo IP da VM onde o Zabbix está rodando.
 
 ### Zabbix Web Interface
 
-Após executar o script `deploy_zabbix.sh`, a interface web do Zabbix estará disponível em:
+Após executar o script `Deploy.sh`, a interface web do Zabbix estará disponível em:
 
 ~~~
 http://<IP_DA_VM_ZABBIX>:8084
@@ -114,7 +114,7 @@ http://<IP_DA_VM_ZABBIX>:8084
 
 ### Portfólio
 
-Após executar o script `deploy.sh`, o site de portfólio estará disponível em:
+Após executar o script `Deploy.sh`, o site de portfólio estará disponível em:
 
 ~~~
 http://<IP_DA_VM_SERVIDOR>:80
